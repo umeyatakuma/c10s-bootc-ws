@@ -10,4 +10,6 @@ RUN dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.
 RUN dnf -y group install --skip-broken Workstation
 RUN dnf -y install fastfetch
 
+RUN dnf -y remove firefox
+
 RUN dnf -y clean all
